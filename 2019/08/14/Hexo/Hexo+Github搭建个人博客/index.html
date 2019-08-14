@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://sleepLion99.github.io">
-  <title>HTML入门笔记 | the blog of Lee</title>
+  <title>Hexo+Github 快速搭建个人博客 | the blog of Lee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.   本文总">
-<meta name="keywords" content="Java">
+  <meta name="description" content="静态博客-Hexo&amp;ensp;&amp;ensp;本文主要介绍如何快速的使用Hexo+Github 快速的搭建并且部署自己的个人博客(free) 1.本地安装1.1安装Node.js&amp;ensp;&amp;ensp;因为Hexo是通过Node.js生成的，所以首先需要根据自己的操作系统版本下载并安装Node.js。&amp;ensp;&amp;ensp;根据步骤提示进行操作后，在cmd中输入命令： node -v">
+<meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML入门笔记">
-<meta property="og:url" content="https://sleepLion99.github.io/2019/08/13/aaa/index.html">
+<meta property="og:title" content="Hexo+Github 快速搭建个人博客">
+<meta property="og:url" content="https://sleepLion99.github.io/2019/08/14/Hexo/Hexo+Github搭建个人博客/index.html">
 <meta property="og:site_name" content="the blog of Lee">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.   本文总">
+<meta property="og:description" content="静态博客-Hexo&amp;ensp;&amp;ensp;本文主要介绍如何快速的使用Hexo+Github 快速的搭建并且部署自己的个人博客(free) 1.本地安装1.1安装Node.js&amp;ensp;&amp;ensp;因为Hexo是通过Node.js生成的，所以首先需要根据自己的操作系统版本下载并安装Node.js。&amp;ensp;&amp;ensp;根据步骤提示进行操作后，在cmd中输入命令： node -v">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-14T04:40:52.245Z">
+<meta property="og:image" content="https://sleeplion99.github.io/img/%E6%8D%95%E8%8E%B7.PNG">
+<meta property="og:updated_time" content="2019-08-14T06:49:03.293Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HTML入门笔记">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.   本文总">
+<meta name="twitter:title" content="Hexo+Github 快速搭建个人博客">
+<meta name="twitter:description" content="静态博客-Hexo&amp;ensp;&amp;ensp;本文主要介绍如何快速的使用Hexo+Github 快速的搭建并且部署自己的个人博客(free) 1.本地安装1.1安装Node.js&amp;ensp;&amp;ensp;因为Hexo是通过Node.js生成的，所以首先需要根据自己的操作系统版本下载并安装Node.js。&amp;ensp;&amp;ensp;根据步骤提示进行操作后，在cmd中输入命令： node -v">
+<meta name="twitter:image" content="https://sleeplion99.github.io/img/%E6%8D%95%E8%8E%B7.PNG">
   
   
     <link rel="icon" href="/assets/fac.jpg">
@@ -60,6 +62,13 @@
 	        
 			</ul>
 		</nav>
+
+		<nav class="header-smart-menu">
+			总文章数 1
+			总字数 <span class="post-count">236</span>
+		</nav>
+		
+
 		<nav class="header-smart-menu">
     		
     			
@@ -79,6 +88,10 @@
 					<a class="github" target="_blank" href="https://github.com/sleepLion99" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="qq" target="_blank" href="tencent://Message/?Uin=1006947397&amp;websiteName=q-zone.qq.com&amp;Menu=yes" title="qq"><i class="icon-qq"></i></a>
+		        
+					<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/64f8288da242" title="jianshu"><i class="icon-jianshu"></i></a>
+		        
+					<a class="bilibili" target="_blank" href="https://space.bilibili.com/382394312" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:a1006947397@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
@@ -121,6 +134,10 @@
 			        
 						<a class="qq" target="_blank" href="tencent://Message/?Uin=1006947397&amp;websiteName=q-zone.qq.com&amp;Menu=yes" title="qq"><i class="icon-qq"></i></a>
 			        
+						<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/64f8288da242" title="jianshu"><i class="icon-jianshu"></i></a>
+			        
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/382394312" title="bilibili"><i class="icon-bilibili"></i></a>
+			        
 						<a class="mail" target="_blank" href="mailto:a1006947397@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
@@ -147,44 +164,38 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-aaa" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Hexo/Hexo+Github搭建个人博客" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      HTML入门笔记
+      Hexo+Github 快速搭建个人博客
     </h1>
   
 
         
-        <a href="/2019/08/13/aaa/" class="archive-article-date">
-  	<time datetime="2019-08-13T08:52:11.279Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-13</time>
+        <a href="/2019/08/14/Hexo/Hexo+Github搭建个人博客/" class="archive-article-date">
+  	<time datetime="2019-08-14T05:38:12.859Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
 </a>
         
       </header>
+
+
+      <div align="center" class="post-count">
+        字数：236字 | 预计阅读时长：1分钟 | <span id="busuanzi_container_page_pv">  阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+      </div>
+
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<p><span id="busuanzi_container_page_pv">  本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><hr>
-<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><a id="more"></a>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <h2 id="静态博客-Hexo"><a href="#静态博客-Hexo" class="headerlink" title="静态博客-Hexo"></a>静态博客-Hexo</h2><p>&ensp;&ensp;本文主要介绍如何快速的使用Hexo+Github 快速的搭建并且部署自己的个人博客(free)</p>
+<h3 id="1-本地安装"><a href="#1-本地安装" class="headerlink" title="1.本地安装"></a>1.本地安装</h3><h4 id="1-1安装Node-js"><a href="#1-1安装Node-js" class="headerlink" title="1.1安装Node.js"></a>1.1安装Node.js</h4><p>&ensp;&ensp;因为Hexo是通过Node.js生成的，所以首先需要根据自己的操作系统版本下载并安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>。<br>&ensp;&ensp;根据步骤提示进行操作后，在cmd中输入命令： node -v</p>
+<a id="more"></a>
+<p><img src="/img/%E6%8D%95%E8%8E%B7.PNG" alt="安装"><br>&ensp;&ensp;如果能正确显示Node.js版本，则说明安装成功（本人使用的版本为v10.16.2）。</p>
+<h4 id="1-2通过npm安装Hexo框架"><a href="#1-2通过npm安装Hexo框架" class="headerlink" title="1.2通过npm安装Hexo框架"></a>1.2通过npm安装Hexo框架</h4><p>hashdkajsadkjsadasdjjsajd</p>
+<h3 id="2-本地使用"><a href="#2-本地使用" class="headerlink" title="2.本地使用"></a>2.本地使用</h3><h4 id="2-1创建目录"><a href="#2-1创建目录" class="headerlink" title="2.1创建目录"></a>2.1创建目录</h4><h4 id="2-2初始化博客"><a href="#2-2初始化博客" class="headerlink" title="2.2初始化博客"></a>2.2初始化博客</h4><h4 id="2-3新建文章"><a href="#2-3新建文章" class="headerlink" title="2.3新建文章"></a>2.3新建文章</h4><h4 id="2-4生成博客静态文件"><a href="#2-4生成博客静态文件" class="headerlink" title="2.4生成博客静态文件"></a>2.4生成博客静态文件</h4><h4 id="2-5启动博客"><a href="#2-5启动博客" class="headerlink" title="2.5启动博客"></a>2.5启动博客</h4><h4 id="2-6更换主题"><a href="#2-6更换主题" class="headerlink" title="2.6更换主题"></a>2.6更换主题</h4><h4 id="2-7其他-config-yaml配置"><a href="#2-7其他-config-yaml配置" class="headerlink" title="2.7其他_config.yaml配置"></a>2.7其他_config.yaml配置</h4><h3 id="3-服务器部署"><a href="#3-服务器部署" class="headerlink" title="3.服务器部署"></a>3.服务器部署</h3><h4 id="3-1本地-github-io-白嫖部署"><a href="#3-1本地-github-io-白嫖部署" class="headerlink" title="3.1本地 + github.io 白嫖部署"></a>3.1本地 + github.io 白嫖部署</h4><h5 id="3-2生成github-io仓库"><a href="#3-2生成github-io仓库" class="headerlink" title="3.2生成github.io仓库"></a>3.2生成github.io仓库</h5><h5 id="3-3本地安装Hexo的git部署插件"><a href="#3-3本地安装Hexo的git部署插件" class="headerlink" title="3.3本地安装Hexo的git部署插件"></a>3.3本地安装Hexo的git部署插件</h5><h5 id="3-4本地修改-config-yaml文件"><a href="#3-4本地修改-config-yaml文件" class="headerlink" title="3.4本地修改_config.yaml文件"></a>3.4本地修改_config.yaml文件</h5><h5 id="3-5部署"><a href="#3-5部署" class="headerlink" title="3.5部署"></a>3.5部署</h5>
       
 
       
@@ -223,7 +234,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
         		</li>
       		
 		</ul>
@@ -235,7 +246,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/JavaEE//" class="article-tag-list-link color2">JavaEE</a>
+        			<a href="/categories/Hexo//" class="article-tag-list-link color5">Hexo</a>
         		</li>
       		
 		</ul>
@@ -290,7 +301,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://sleepLion99.github.io/2019/08/13/aaa/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://sleepLion99.github.io/2019/08/14/Hexo/Hexo+Github搭建个人博客/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -302,20 +313,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-    <a href="/2019/08/13/bbb/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          HTML深入学习笔记
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -337,7 +334,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-number">2.</span> <span class="toc-text">Hello World</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">2.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">2.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">2.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">2.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#静态博客-Hexo"><span class="toc-number">1.</span> <span class="toc-text">静态博客-Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-本地安装"><span class="toc-number">1.1.</span> <span class="toc-text">1.本地安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1安装Node-js"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1安装Node.js</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2通过npm安装Hexo框架"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2通过npm安装Hexo框架</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-本地使用"><span class="toc-number">1.2.</span> <span class="toc-text">2.本地使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1创建目录"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1创建目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2初始化博客"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2初始化博客</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3新建文章"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.3新建文章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4生成博客静态文件"><span class="toc-number">1.2.4.</span> <span class="toc-text">2.4生成博客静态文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5启动博客"><span class="toc-number">1.2.5.</span> <span class="toc-text">2.5启动博客</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6更换主题"><span class="toc-number">1.2.6.</span> <span class="toc-text">2.6更换主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-7其他-config-yaml配置"><span class="toc-number">1.2.7.</span> <span class="toc-text">2.7其他_config.yaml配置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-服务器部署"><span class="toc-number">1.3.</span> <span class="toc-text">3.服务器部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1本地-github-io-白嫖部署"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1本地 + github.io 白嫖部署</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2生成github-io仓库"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">3.2生成github.io仓库</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-3本地安装Hexo的git部署插件"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">3.3本地安装Hexo的git部署插件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-4本地修改-config-yaml文件"><span class="toc-number">1.3.1.3.</span> <span class="toc-text">3.4本地修改_config.yaml文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-5部署"><span class="toc-number">1.3.1.4.</span> <span class="toc-text">3.5部署</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -368,7 +365,7 @@
             verify: verify,
             app_id: "KYQhqdoqgr5SbPCGV4Ov93hC-MdYXbMMI",
             app_key: "MWkG8mcXukUWE4GWXk7SguEg",
-            placeholder: "老铁不想说几句话么?",
+            placeholder: "(*╹▽╹*)点击此处评论哦",
             avatar:"mm"
         });
     }
@@ -414,6 +411,8 @@
   总访客数<span id="busuanzi_value_site_uv"></span>人次
   </span>
       <!--统计end-->
+
+      
 
       <div><script type="text/javascript"></script></div>
       <div>
@@ -512,7 +511,7 @@ var _hmt = _hmt || [];
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
             
             <div class="clearfix"></div>
