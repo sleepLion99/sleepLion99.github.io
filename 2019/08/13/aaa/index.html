@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="the blog of Lee">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.   本文总">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-14T01:07:55.462Z">
+<meta property="og:updated_time" content="2019-08-14T04:40:52.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML入门笔记">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.   本文总">
@@ -350,6 +350,33 @@
 
 
 
+<section id="comments" class="comments">
+  <style>
+    .comments{margin:30px;padding:10px;background:#fff}
+    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+  </style>
+  <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "KYQhqdoqgr5SbPCGV4Ov93hC-MdYXbMMI",
+            app_key: "MWkG8mcXukUWE4GWXk7SguEg",
+            placeholder: "老铁不想说几句话么?",
+            avatar:"mm"
+        });
+    }
+</script>
+  </section>
+
+
+
      
 
 
@@ -366,31 +393,6 @@
   
 
 
-
-<section id="comments" class="comments">
-  <style>
-    .comments{margin:30px;padding:10px;background:#fff}
-    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-  </style>
-  <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'false' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "KYQhqdoqgr5SbPCGV4Ov93hC-MdYXbMMI",
-            app_key: "MWkG8mcXukUWE4GWXk7SguEg",
-            placeholder: "Just go go",
-            avatar:"mm"
-        });
-    }
-</script>
-  </section>
 
           </div>
         </div>
